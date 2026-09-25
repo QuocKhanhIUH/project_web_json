@@ -1,0 +1,17 @@
+com\example\app\entity\Product.class
+com\example\app\config\SecurityConfig.class
+com\example\app\service\ProductService.class
+com\example\app\controller\ProductViewController.class
+com\example\app\config\DataSeeder.class
+com\example\app\AppApplication.class
+com\example\app\repository\ProductRepository.class
+com\example\app\security\CustomUserDetailsService.class
+com\example\app\dto\SignupForm.class
+com\example\app\service\impl\ProductServiceImpl.class
+com\example\app\controller\DashboardController.class
+com\example\app\controller\ProductRestController.class
+com\example\app\entity\User.class
+com\example\app\repository\UserRepository.class
+com\example\app\controller\AuthController.class
+com\example\app\service\impl\UserServiceImpl.class
+com\example\app\service\UserService.class

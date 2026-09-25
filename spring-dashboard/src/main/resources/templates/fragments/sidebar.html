@@ -1,0 +1,15 @@
+<div xmlns:th="http://www.thymeleaf.org"
+     xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+     th:fragment="sidebar" class="bg-light border-end vh-100 p-3" style="width:220px;">
+    <ul class="nav nav-pills flex-column gap-1">
+        <li class="nav-item">
+            <a class="nav-link" th:href="@{/dashboard}">Dashboard</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" th:href="@{/products}">San pham</a>
+        </li>
+        <li class="nav-item" sec:authorize="hasRole('ADMIN')">
+            <a class="nav-link" th:href="@{/products/add}">Them san pham</a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,12 @@
+<nav xmlns:th="http://www.thymeleaf.org" th:fragment="navbar" class="navbar navbar-dark bg-dark px-3">
+    <span class="navbar-brand mb-0 h1">Spring Dashboard</span>
+    <div class="d-flex align-items-center text-white">
+        <span class="me-3" sec:authorize="isAuthenticated()" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+            Xin chao, <b sec:authentication="name">user</b>
+            (<span sec:authentication="principal.authorities">role</span>)
+        </span>
+        <form th:action="@{/logout}" method="post" class="d-inline">
+            <button type="submit" class="btn btn-outline-light btn-sm">Dang xuat</button>
+        </form>
+    </div>
+</nav>
