@@ -1,0 +1,52 @@
+<!-- Combobox chọn khoa -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý sinh viên</title>
+    <!-- Nếu bạn có code CSS làm đẹp giao diện, nó sẽ nhận ở đây -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Quản lý Sinh Viên</h2>
+    <!-- FORM ĐƠN GIẢN -->
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 20px;">
+        <b>Form Sinh Viên:</b>
+        <input type="hidden" id="studentId">
+        <input type="text" id="maSv" placeholder="Mã SV">
+        <input type="text" id="hoTen" placeholder="Họ Tên">
+        <input type="date" id="ngaySinh">
+        <select id="formKhoaSelect"></select>
+        <button onclick="saveStudent()">Lưu</button>
+        <button onclick="clearForm()">Hủy</button>
+    </div>
+
+    <!-- Combobox chọn khoa -->
+    <!-- Lưu ý: Chữ 'L' trong LoadStudentsByKhoa() viết hoa giống code của bạn -->
+    <select id="khoaSelect" onchange="LoadStudentsByKhoa()">
+        <option value="">-- Chọn Khoa --</option>
+        <!-- Các option khoa sẽ được load vào đây -->
+    </select>
+
+    <br><br>
+
+    <!-- Bảng hiển thị danh sách sinh viên -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Mã SV</th>
+                <th>Họ Tên</th>
+                <th>Ngày Sinh</th>
+            </tr>
+        </thead>
+        <tbody id="studentTableBody">
+            <!-- Dữ liệu JSON sẽ được render vào đây -->
+        </tbody>
+    </table>
+
+    <!-- Khai báo file JavaScript để xử lý gọi API -->
+    <script src="app.js"></script>
+</body>
+</html>

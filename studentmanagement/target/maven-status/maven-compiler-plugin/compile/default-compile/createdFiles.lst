@@ -1,0 +1,14 @@
+com\example\studentmanagement\Controller\KhoaController.class
+com\example\studentmanagement\entity\Student.class
+com\example\studentmanagement\Controller\package-info.class
+com\example\studentmanagement\Controller\StudentController.class
+com\example\studentmanagement\entity\package-info.class
+com\example\studentmanagement\service\package-info.class
+com\example\studentmanagement\StudentmanagementApplication.class
+com\example\studentmanagement\dto\package-info.class
+com\example\studentmanagement\service\StudentService.class
+com\example\studentmanagement\dto\StudentDto.class
+com\example\studentmanagement\entity\Khoa.class
+com\example\studentmanagement\repository\StudentRepository.class
+com\example\studentmanagement\repository\package-info.class
+com\example\studentmanagement\repository\KhoaRepository.class
